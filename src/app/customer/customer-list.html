@@ -1,0 +1,89 @@
+<ol class="breadcrumb">
+  <li><a href="#">机构对接</a></li>
+  <li class="active">客户列表</li>
+</ol>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-body">
+	   <div class="col-md-4">
+	   		<div class="input-group">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default">机构名称</button>
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+		          <span class="caret"></span>
+		          <span class="sr-only">Toggle Dropdown</span>
+		        </button>
+		        <ul class="dropdown-menu" role="menu">
+		          <li><a href="#">机构名称</a></li>
+		          <li><a href="#">机构账号</a></li>
+		          <li><a href="#">负责人</a></li>
+		          <!-- <li class="divider"></li> -->
+		        </ul>
+		      </div>
+		      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+		    </div>
+	    </div>
+
+      <div class="text-right">
+        <button class="btn btn-default">
+          <i class="fa fa-search"></i>
+          查询
+        </button>
+
+        <a ui-sref="cmt.customerAdd" class="btn btn-default">
+          <i class="fa fa-plus"></i>
+          添加客户
+        </a>
+      </div>
+  </div>
+
+
+  <table class="table">
+        <thead>
+          <tr>
+            <th>机构名称</th>
+            <th>机构账号</th>
+            <th>对接状态</th>
+            <th>负责人</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>
+            	<a ui-sref="cmt.customerDetail({id:1})">Mark</a>
+            </td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>
+            	<button class="btn btn-xs btn-default">详情</button>
+            	<button class="btn btn-xs btn-default">编辑</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>
+            	<button class="btn btn-xs btn-default">详情</button>
+            	<button class="btn btn-xs btn-default">编辑</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>
+            	<button class="btn btn-xs btn-default">详情</button>
+            	<button class="btn btn-xs btn-default">编辑</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
